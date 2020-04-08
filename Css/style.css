@@ -1,0 +1,56 @@
+body{
+    background-color:rgb(233, 230, 230);
+        background: url(../images/piscine.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+.divglob{
+border: #2e352e solid 1px;
+width: 30%;
+height:auto;
+margin-left: auto ;
+margin-right: auto ;
+}
+.div_control{
+    width: 100%;
+    height: auto;
+    background-color: darkslategray;
+    opacity: 0.9;
+}
+
+.div_supervision{
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    margin-left: auto ;
+    margin-right: auto ;
+    background-color: rgb(211, 239, 248);
+}
+.states{
+    background-color: rgb(226, 151, 10);
+    opacity: 0.9;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: solid 1px cornflowerblue;
+}
+button:hover{
+    opacity: 0.9;
+}
+.label{
+    padding: 10px;
+    display: block;
+    font-size: large;
+    color: rgb(3, 37, 5);
+}
+.label1{
+    padding: 10px;
+    display: block;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(2, 5, 7);
+}

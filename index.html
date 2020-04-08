@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme de controle</title>
+    <!-- style.css implementation -->
+    <link href="Css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Firebase services implementation -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAmKc5taJxGIRoRmfb0lWc34b1j2-BJg28",
+    authDomain: "piscine-a0b02.firebaseapp.com",
+    databaseURL: "https://piscine-a0b02.firebaseio.com",
+    projectId: "piscine-a0b02",
+    storageBucket: "piscine-a0b02.appspot.com",
+    messagingSenderId: "624898462994",
+    appId: "1:624898462994:web:acd915c57451211b938fcb"
+  };
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.database();
+</script>
+<!-- create divs for design -->
+    <!-- div global as a panel -->
+    <div class="divglob">
+        <!-- div for supervision of informations -->
+    <div class="div_supervision">
+        <label class="label" id="p1">Température de la pièce : </label>
+        <label class="label" id="p2">Humidité de la pièce : </label>
+        <label class="label" id="p3">Température de l'eau : </label>
+        <label class="label" id="p4">PH de l'eau : </label>
+        <label class="label" id="p5">Niveau d'eau : </label>
+    </div>
+        <!-- div to show states of control -->
+    <div class="states">
+        <label class="label1" id="s1">Système Globale : </label>
+        <label class="label1" id="s2">Filtre : </label>
+        <label class="label1" id="s3">Action Eau : </label>
+        <label class="label1" id="s4">LEDs : </label>
+    </div>
+        <!-- and this one to send controls to database -->
+    <div class="div_control">
+        <button class="btn" id="c1">Start/Stop le Système globale</button>
+        <button class="btn" id="c2">Start/Stop le filtre à sable</button>
+        <button class="btn" id="c3">Remplir/Vider la piscine</button>
+        <button class="btn" id="c4">Allumer/éteindre les LEDs de nuit</button>
+    </div>
+    </div>
+<!-- main.js implementation  -->
+<script src="js/main.js"></script>
+</body>
+</html>
